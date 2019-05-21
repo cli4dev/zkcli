@@ -36,7 +36,7 @@ zk:/us/ums1/web/t >cat conf
 
 zk:/us/ums1/web/t >
 ```
-##### 5. `cd /`进入指定目录
+##### 5. `cd /xx`进入指定目录
 ```sh
 zk:/us/ums1 >cd /us
 zk:/us >
@@ -48,7 +48,7 @@ zk:/us/ums1 >cd ..
 zk:/us >
 
 ```
-##### 7. `cd  ..`模糊匹配
+##### 7. `cd  xx`模糊匹配
 ```sh
 zk:/us >cd u
 zk:/us/ums1 >
@@ -56,7 +56,7 @@ zk:/us/ums1 >
 
 
 
-##### 8. `pwd`显示当前目录路径
+##### 8. `pwd`显示当前路径
 ```sh
 zk:/us/ums1 >pwd
 /us/ums1
