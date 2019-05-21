@@ -43,7 +43,7 @@ func getCurrentPath(c *cli.Context) (string, error) {
 		if len(items) == 1 {
 			return "", fmt.Errorf("未指定路径或名称")
 		}
-		return filepath.Join(items[:len(items)-1]...), nil
+		return filepath.Join("/", filepath.Join(items[:len(items)-1]...)), nil
 	default:
 
 		paths, _, err := rgsts.Rgst.GetChildren(npath)
