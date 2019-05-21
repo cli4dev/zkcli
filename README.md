@@ -12,7 +12,7 @@ zk:/ >
 
 ```
 
-##### 2. `ls`列出所有子节点
+##### 2. `ls`列出子节点
 ```sh
 zk:/ >ls
 coupon_v2_debug            
@@ -21,7 +21,7 @@ sinopec_coupon             recv-coupon_debug          convoy_collect_debug      
 sso                        hydra-20_debug             
 ```
 
-##### 3. `cd`进入子目录
+##### 3. `cd`进入目录
 ```sh
 zk:/ >cd us
 zk:/us >
