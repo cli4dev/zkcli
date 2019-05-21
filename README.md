@@ -15,7 +15,7 @@ zk:/ >
 ##### 2. `ls`列出子节点
 ```sh
 zk:/ >ls
-coupon_v2_debug            
+us            
 monitor_debug              gsms_debug                 merge_debug                ServerMonitor              
 sinopec_coupon             recv-coupon_debug          convoy_collect_debug       dxcsh_debug                
 sso                        hydra-20_debug             
