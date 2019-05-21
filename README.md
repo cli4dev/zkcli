@@ -1,5 +1,5 @@
 # zkcli
-zookeeper命令行控制工具
+zookeeper命令行工具
 
 ##### 1. 连接到zookeeper
 
