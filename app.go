@@ -18,7 +18,6 @@ var VERSION = "1.0.0"
 
 //Start 启动应用程序
 func Start() {
-	// defer time.Sleep(time.Second * 5)
 	if len(os.Args) < 2 {
 		rgsts.Log.Error("请输入zookeeper服务器地址")
 		return
@@ -31,7 +30,7 @@ func Start() {
 	rgsts.Rgst = rgst
 
 	for {
-		time.Sleep(time.Millisecond * 200)
+		time.Sleep(time.Millisecond * 100)
 		var input string
 		fmt.Printf("zk:%s >", rgsts.GetRoot())
 		scanf(&input)
@@ -54,7 +53,7 @@ func newCliApp() *cli.App {
 	app := cli.NewApp()
 	app.Name = filepath.Base(os.Args[0])
 	app.Version = VERSION
-	app.Usage = "zookeeper框架辅助工具，用于管理zookeeper节点"
+	app.Usage = "zookeeper辅助工具，用于管理查看，删除zk节点"
 	cli.HelpFlag = cli.BoolFlag{
 		Name:  "help,h",
 		Usage: "查看帮助信息",
